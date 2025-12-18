@@ -1,0 +1,86 @@
+.oculto {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.mostrar {
+    display: block;
+    opacity: 1;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 20% 50% rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80% rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.calculadora {
+    max-width: 400px;
+    background: linear-gradient(rgb(212, 212, 212), rgb(255, 255, 255));
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.425);
+    color: #3a0a6b;
+}
+
+.boton {
+    background-color: rgb(200, 156, 206);
+    color: #441375;
+    border: solid 1px #441375 rgb(212, 212, 212);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.425);
+    margin: 0.5rem;
+}
+
+.boton:hover {
+    box-shadow: 0 16px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    background-color: rgb(103, 73, 173);
+}
+
+#boton-calcular {
+    background-color: rgb(103, 73, 173);
+    color: whitesmoke;
+    border: solid wheat 1px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.212);
+}
+
+#boton-calcular:hover {
+    box-shadow: 0 16px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(2px);
+    transition: all 0.3s ease;
+    background-color: rgb(43, 6, 92);
+}
+
+/*ALERTA*/
+
+/*BOTONES INFO CREADOR*/
+.modal1,
+.modal2 {
+    text-align: left;
+}
+
+.modal1 .modal-header,
+.modal2 .modal-header {
+    color: whitesmoke;
+    background-color: #441375;
+}
+
+.modal ul {
+    list-style: none;
+}
+
+.modal ul li {
+    margin: 1rem;
+}
